@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment</title>
+<link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+<div class="payment-container">
+  <div class="payment-box card-details">
+    <h2>Enter Card Details</h2>
+    <form>
+      <label for="card-number">Card Number:</label>
+      <input type="text" id="card-number" name="card-number" placeholder="Enter card number" required>
+      
+      <button class="confirm-button">Confirm Payment</button>
+    </form>
+  </div>
+  <div class="payment-box order-summary">
+    <h2>Order Summary</h2>
+    <div class="summary-details">
+      <div class="summary-row">
+        <span class="summary-label">Plan Name:</span>
+        <span class="summary-value">Mobile</span>
+      </div>
+      <div class="summary-row">
+        <span class="summary-label">Billing Cycle:</span>
+        <span class="summary-value">Yearly</span>
+      </div>
+      <div class="summary-row">
+        <span class="summary-label">Plan Price:</span>
+        <span class="summary-value">1000/year</span>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

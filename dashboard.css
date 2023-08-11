@@ -1,0 +1,65 @@
+/* Reset some default styles */
+
+body, h1, h2, p, ul, li {
+    margin-top: 20px;
+    padding: 0;
+	
+  }
+h3{
+    margin-top: 20px;
+    padding: 0;
+	text-align: center;
+  }
+
+  /* Add your custom styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1e4d91; /* Blue background color */
+    color: white; /* Text color */
+    overflow: hidden; /* Prevent horizontal scroll */
+  }
+  p {
+	  color:#1e4d91;
+  }
+
+  .center-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white; /* White box background color */
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    position: relative;
+    animation: moveRightToLeft 10s linear infinite; /* Animation for moving right to left */
+  }
+
+  @keyframes moveRightToLeft {
+    0% {
+      left: 100%; /* Start from the right edge of the container */
+    }
+    100% {
+      left: 0; /* Stop at the left edge of the container */
+    }
+  }
+
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+  img {
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center align the image horizontally */
+  }

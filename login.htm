@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="maind.css">
+</head>
+<body>
+<div class="form-box">
+  <h3 text-align="center">Login to your account</h3>
+  <form action="login.php" method="post">
+    <div class="form-group">
+    <label for="loginEmail">Email</label>
+    <input type="email" id="loginEmail" name="loginEmail" required>
+    </div>
+    
+    <div class="form-group">
+    <label for="loginPassword">Password</label>
+    <input type="password" id="loginPassword" name="loginPassword" required>
+    </div>
+    <div class="single-line"> <!-- Applies the .form-group styles and a new class for single line -->
+      <input type="checkbox" id="rememberMe" name="rememberMe">
+      <label for="rememberMe">Remember Me</label>
+    </div>
+    <div class="form-group">
+    <button type="submit">Login</button></div>
+    <br>
+    New to MyApp? <a href="main.htm"> Sign Up </a>
+  </form>
+</div>
+</body>
+</html>
